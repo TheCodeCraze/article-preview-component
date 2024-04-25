@@ -176,3 +176,58 @@
 .icon {
   cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+  .article {
+    width: 327px;
+    height: 504px;
+    flex-direction: column;
+  }
+
+  .article-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .article-text {
+    width: 100%;
+    height: 304px;
+    padding: 36px 32px 20px;
+  }
+
+  .title {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+  }
+
+  .description {
+    margin: 12px 0 32px;
+  }
+
+  .share-to {
+    top: -10px;
+    right: -32px;
+    width: 327px;
+    height: 64px;
+  }
+
+  .content {
+    height: 100%;
+    padding: 22px 32px;
+    justify-content: unset;
+    gap: 21px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .content::after {
+    display: none;
+  }
+}

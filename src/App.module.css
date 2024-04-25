@@ -1,0 +1,178 @@
+.article {
+  width: 730px;
+  height: 280px;
+  background: #ffffff;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0px 40px 40px -10px hsla(210, 29%, 84%, 0.5034);
+}
+
+.article-image {
+  width: 285px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px 0 0 10px;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+}
+
+.article-text {
+  width: 445px;
+  height: 100%;
+  padding: 32px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--very-dark-grayish-blue);
+  line-height: 28px;
+  letter-spacing: 0.25px;
+}
+
+.description {
+  margin: 12px 0 20px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--desaturated-dark-blue);
+  line-height: 20px;
+  letter-spacing: 0.12px;
+}
+
+.info {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.profile {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.name,
+.date {
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.12px;
+}
+
+.name {
+  font-weight: 700;
+  color: var(--very-dark-grayish-blue);
+}
+
+.date {
+  font-weight: 500;
+  color: var(--grayish-blue);
+}
+
+.share {
+  width: 32px;
+  height: 32px;
+  background: var(--light-grayish-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.icon-share {
+  fill: var(--desaturated-dark-blue);
+}
+
+.share:hover {
+  background: var(--desaturated-dark-blue);
+}
+
+.share:hover > .icon-share {
+  fill: #ffffff;
+}
+
+.share:hover + .share-to {
+  display: block;
+}
+
+.share-to {
+  position: absolute;
+  top: -80px;
+  right: -108px;
+  width: 248px;
+  height: 115px;
+  display: none;
+}
+
+.share-to:hover {
+  display: block;
+}
+
+.content {
+  width: 100%;
+  height: 55px;
+  padding: 18px 36px 17px 37px;
+  background: var(--very-dark-grayish-blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px 0 hsla(210, 29%, 84%, 0.5034);
+}
+
+.content::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 46.5%;
+  bottom: -9px;
+  width: 18px;
+  height: 18px;
+  transform: rotate(45deg);
+  background: var(--very-dark-grayish-blue);
+}
+
+.text-share {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--grayish-blue);
+  text-transform: uppercase;
+  line-height: 20px;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+
+.icons {
+  width: 92px;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  cursor: pointer;
+}

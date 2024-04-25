@@ -2,7 +2,7 @@ import styles from "./App.module.css";
 
 export const App = () => {
   return (
-    <article className={styles.article}>
+    <main className={styles.article}>
       <div className={styles["article-image"]}>
         <img
           src="/drawers.jpg"
@@ -32,15 +32,13 @@ export const App = () => {
               <p className={styles.date}>28 Jun 2020</p>
             </div>
           </div>
-          <div
-            className={styles.share}
-            aria-label="Click to share this article"
-          >
+          <div className={styles.share}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="15"
               height="13"
               className={styles["icon-share"]}
+              aria-label="Click to share this article"
             >
               <path d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z" />
             </svg>
@@ -69,6 +67,6 @@ export const App = () => {
           </div>
         </div>
       </div>
-    </article>
+    </main>
   );
 };
